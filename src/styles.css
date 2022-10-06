@@ -1,0 +1,111 @@
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background-color: whitesmoke;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+img {
+  width: 60%;
+  margin: 20px auto;
+}
+.appContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.pokemonRow {
+  background-color: rgba(6, 146, 69, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: solid 4px black;
+  margin: 8px;
+  padding: 4px;
+  transition: 0.3s;
+}
+.pokemonRow:hover {
+  transform: scale(1.1, 1.4);
+  text-decoration: underline;
+  background-color: rgba(6, 146, 69, 0.3);
+}
+.imageContainer {
+  background-color: rgba(6, 146, 69, 0.4);
+  display: flex;
+  max-width: 600px;
+  min-height: 600px;
+  border: solid 4px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px, 4px;
+  border-radius: 24px;
+}
+.pokemonButton {
+  border: solid 4px black;
+  border-radius: 12px;
+  width: 600px;
+  height: 40px;
+  margin: 8px;
+  transition: 0.3s;
+}
+.buttonsContainer {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.backButton {
+  background-color: #fadb5ec2;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 20px 0;
+  border: solid 4px black;
+  transition: 0.3s;
+}
+.backButton:hover {
+  background-color: #f3a806c9;
+  font-weight: bold;
+}
+.pokemonButton:hover {
+  background-color: #88ff0094;
+  font-weight: bold;
+}
+.abilitisContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8px;
+  padding: 4px;
+  background-color: lightgray;
+  border-radius: 20px;
+  gap: 8px;
+  border: solid 4px black;
+}
+.ability {
+  margin: 8px;
+  font-weight: bold;
+}
+.link {
+  width: 100%;
+  max-width: 400px;
+  text-decoration: none;
+  color: black;
+}
